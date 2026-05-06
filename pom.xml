@@ -9,31 +9,31 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <java.version>17</java.version>
+        <langchain4j.version>1.13.0</langchain4j.version>
     </properties>
 
     <dependencies>
 
-        <!--  LangChain4j Core -->
+        <!-- Core LangChain4j -->
         <dependency>
             <groupId>dev.langchain4j</groupId>
             <artifactId>langchain4j</artifactId>
-            <version>1.13.0</version>
+            <version>${langchain4j.version}</version>
         </dependency>
 
-        <!--  Gemini integration -->
+        <!-- Google AI Gemini (via clé API) -->
         <dependency>
             <groupId>dev.langchain4j</groupId>
             <artifactId>langchain4j-google-ai-gemini</artifactId>
-            <version>1.14.0</version>
+            <version>${langchain4j.version}</version>
         </dependency>
 
-        <!--  Logging propre -->
+        <!-- Logging -->
         <dependency>
             <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-simple</artifactId>
-            <version>2.0.13</version>
+            <artifactId>slf4j-jdk14</artifactId>
+            <version>2.0.12</version>
         </dependency>
 
     </dependencies>
